@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>🧚🏻‍️김서건의 딸기맛 짜장면 전문점 🧚🏻‍</h1>
+    <form name="form1" action= "form_ok.jsp" method="post">
+
+        <label for ="p_num"><span>전화번호: </span></label>
+        <input type="text" id="p_num" name="uname" required><br>
+
+        <label for ="fname"><span>성함: </span></label>
+        <input type="text" id="fname" name="uname" required><br>
+        <br>
+        성별:
+        <label><input type="radio" name="gender" value="남자" checked> 남자</label>
+        <label><input type="radio" name="gender" value="여자"> 여자</label><br>
+        <br>
+        채소:
+        <input type="checkbox"  name="veg" value="파" checked>파
+        <input type="checkbox"  name="veg" value="쑥" >쑥
+        <br>
+        <br>
+        고기:
+        <input type="checkbox"  name="meat" value="소" checked>소
+        <input type="checkbox"  name="meat" value="돼지">돼지<br>
+        <br>
+        소스:
+        <input type="checkbox"  name="sauce" value="고추기름" checked>고추기름
+        <input type="checkbox"  name="sauce" value="트러프오일">트러프오일<br>
+        <br>
+        고추가루:
+        <label><input type="radio" name="pp" value="Y" checked> 유</label>
+        <label><input type="radio" name="pp" value="N"> 무</label><br>
+        <br>
+
+        지점: <select name="city">
+        <option value="강남">강남</option>
+        <option value="서면">서면</option>
+        <option value="동성로">동성로</option>
+        <br>
+        <br>
+        <br>
+        <br>
+    </select><br>
+        예약 가능 시작 날짜: <input type='date' min="1400-01-01" max="2022-10-13" name='startdate'>
+        <br>
+        <br>
+        예약 가능 마지막 날짜: <input type='date' min="1400-01-01" max="2022-10-13" name='lastdate'>
+        <br>
+        <br>
+        메모 : <br>
+        <textarea name='memo' cols="50" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit"> <input type="reset" value="새로입력">
+    </form>
+</div>
+
+</body>
+</html>
