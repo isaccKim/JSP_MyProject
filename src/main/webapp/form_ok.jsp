@@ -2,7 +2,7 @@
          pageEncoding="UTF-8"%>
 <%
     request.setCharacterEncoding("UTF-8");
-    String p_num = request.getParameter("p_num");
+    String pnum = request.getParameter("p_num");
     String fname = request.getParameter("uname");
     String gender = request.getParameter("gender");
     String veg = request.getParameter("veg");
@@ -22,6 +22,8 @@
     <title>입럭하신 항목은 다음과 같습니다.</title>
 </head>
     <body>
+    전화번호 :  <%=pnum%>
+    <br>
     성함 :  <%=fname%>
     <br>
     성별 :  <%=gender%>
